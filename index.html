@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dream Job Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="surv">
+    <h1 id="title">Dream Job Survey</h1>
+    <p id="description">Help us learn what your dream job is!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input required id="name" name="name" type="text" placeholder="Enter your name"></label>
+      <label for="email" id="email-label">Email <input required id="email" name="email" type="email" placeholder="Enter valid email"></label>
+      <label for="number" id="number-label">Age <input required id="number" type="number" min="10" max="110" placeholder="10"></label>
+      <label for="education-level">What is your current education level? 
+          <select required id="dropdown" name="education-level">
+            <option value="">(select one)</option>
+            <option value="1">No Formal Education</option>
+            <option value="2">Primary Education</option>
+            <option value="3">Secondary Education</option>
+            <option value="4">Vocational or Technical Training</option>
+            <option value="5">Associate's Degree</option>
+            <option value="6">Bachelor's Degree</option>
+            <option value="7">Master's Degree</option>
+            <option value="8">Doctorate or Professional Degree</option>
+            <option value="9">Other</option>
+          </select>
+        </label>
+        <legend class="more">Current Employment Status:</legend>
+        <label for="full-time"><input id="full-time" type="radio" name="em-status" class="inline" value="employed full-time">Employed full-time</label>
+        <label for="part-time"><input id="part-time" type="radio" name="em-status" class="inline" value="employed part-time">Employed part-time</label>
+        <label for="unemployed"><input id="unemployed" type="radio" name="em-status" class="inline" value="not-employed">Unemployed</label>
+        <label for="student"><input id="student" type="radio" name="em-status" class="inline" value="student">Student</label>
+        <label for="retired"><input id="retired" type="radio" class="inline" name="em-status" value="retired">Retired</label>
+        <label for="self-employed"><input id="self-employed" type="radio" name="em-status" class="inline" value="self-employed">Self-Employed</label>
+        <legend class="more">Job Preferences (Check all that apply)</legend>
+        <label for="remote-work"><input id="remote-work" type="checkbox" name="job-preferences" class="inline" value="remote-work">Remote work</label>
+        <label for="flexible-hours"><input id="flexible-hours" type="checkbox" name="job-preferences" class="inline" value="flexible-hours">Flexible Hours</label>
+        <label for="health-insurance"><input id="health-insurance" type="checkbox" name="job-preferences" class="inline" value="health-insurance">Health Insurance</label>
+        <label for="advancement"><input id="advancement" type="checkbox" name="job-preferences" class="inline" value="advancement">Opportunities for Advancement</label>
+        <label for="creative-freedom"><input id="creative-freedom" type="checkbox" name="job-preferences" class="inline" value="creative-freedom">Creative Freedom</label>
+        <label for="competitive-salary"><input id="competitive-salary" type="checkbox" name="job-preferences" class="inline" value="competitive-salary">Competitive Salary</label>
+        <label for="job-security"><input id="job-security" type="checkbox" name="job-preferences" class="inline" value="job-security">Job Security</label>
+        <label for="development"><input id="development" type="checkbox" name="job-preferences" class="inline" value="development">Learning and Development</label>
+        <label for="positive-culture"><input id="positive-culture" type="checkbox" name="job-preferences" class="inline" value="positive-culture">Positive Work Culture</label>
+        <label for="work-life-balance"><input id="work-life-balance" type="checkbox" name="job-preferences" class="inline" value="work-life-balance">Work-Life Balance</label>
+        <label for="diversity-inclusion"><input id="diversity-inclusion" type="checkbox" name="job-preferences" class="inline" value="diversity-inclusion">Diversity and Inclusion</label>
+        <label for="travel"><input id="travel" type="checkbox" name="job-preferences" class="inline" value="travel">Travel Opportunities</label>
+        <label class="more"for="description">Describe Your Ideal Work Environment
+          <textarea id="description" name="description" rows="5" cols="40" placeholder="Please describe your ideal work environment, including aspects such as culture, work-life balance, and location. Also, include your expected salary range for your dream job."></textarea>
+        </label>
+        <button id="submit" type"submit">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>
+
+
